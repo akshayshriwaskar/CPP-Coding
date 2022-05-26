@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+    void functionlower(char []);
+
+    int main()
+    {
+       char string[100];
+
+       cout<<"Enter a string to convert it into lower case: "<<endl;
+       cin>>string;
+
+       functionlower(string); // calling functionlower
+
+       cout<<"Entered string in lower case is: "<<string;
+
+       return 0;
+    }
+
+    void functionlower(char s[]) {
+       int c = 0;
+
+       while (s[c] != '\0') {
+          if (s[c] >= 'A' && s[c] <= 'Z') {
+             s[c] = s[c] + 32;
+          }
+          c++;
+       }
+    }
