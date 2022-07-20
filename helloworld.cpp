@@ -1,9 +1,8 @@
-//Example: C++ Hello world program to simply print "Hello World" on computer screen.
 #include<iostream>
 using namespace std;
-int main()
+main()
 {
-
-    cout<<"hello world!";
-    return 0;
+cout<<"hellow world";
+return 0;
 }
+
