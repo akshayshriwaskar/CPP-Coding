@@ -1,12 +1,11 @@
-//C++ program to illustrate use of input and output operators.
+//C++ program to illustrate use of Scope Resolution Operator (::)
 #include<iostream>
 using namespace std;
+int num=30;
 int main()
 {
-
-    int num1,num2;
-    cout<<"\nEnter two numbers:";
-    cin>>num1>>num2; //cascaded input operators
-    cout<<"\n Two numbers are:"<<num1<<","<<num2; //cascaded input operators
-    return 0;
+int num=10;
+cout<<"\nValue of global num is:"<<::num;
+cout<<"\nValue of local num is:"<<num;
+return 0;
 }
